@@ -1,46 +1,50 @@
-# Duck Hunt Instructions
+# 🦆 Duck Hunt Game
 
-# Start the Game:
-Click the "PLAY" button to begin.
-You will hear a welcome sound, and the game will start immediately.
+A browser-based duck hunting arcade game where you aim and shoot moving targets, avoid projectiles, and try to beat your high score! Built with **HTML**, **CSS**, and **JavaScript**.
 
-# Control Your Aim:
-Mouse Controls: Move your mouse to control the crosshair on the screen.
-Keyboard Controls: Use the arrow keys to move the crosshair.
-Press the spacebar to shoot.
+## 🎮 How to Play
 
-# Objective:
-Your goal is to shoot the ducks flying across the screen before time runs out or you lose all your lives.
+- Move the aim using your **mouse** or **arrow keys**.
+- **Click** or press the **spacebar** to shoot.
+- Hit the ducks to gain points—each duck has different point values.
+- Avoid projectiles coming from the top of the screen.
+- You start with **3 lives** and **30 seconds** to score as high as possible.
+- Press **Escape (Esc)** to pause or resume the game.
+- High score is saved locally in your browser.
 
-# Scoring Points:
-Shoot the ducks by clicking on them with your mouse or using the spacebar if controlling the aim with the keyboard.
-Each duck gives different points based on the difficulty to hit them.
-Your score will be updated at the top-right corner of the screen.
+## 🛠️ Installation
 
-# Lives:
-You start with 3 lives.
-If you miss a duck while using the keyboard, or if a projectile hits your crosshair, you will lose a life.
-When you run out of lives, the game will end.
+To run locally:
 
-# Time Limit:
-You have 30 seconds to score as many points as possible.
-The timer will be displayed at the top-right of the screen.
-If the time reaches zero, the game ends.
+1. Clone the repository:
 
-# Game Over:
-If you lose all your lives or run out of time, a "Game Over" message will appear showing your final score.
-You can restart the game after it ends.
+   ```bash
+   git clone https://github.com/KrkmzCigdem/Duck-hunt-js.git
 
-# Projectiles:
-Random projectiles will fall from the top of the screen.
-Avoid these by moving your crosshair to prevent losing a life.
 
-# High Score:
-The game tracks your highest score, which is displayed at the bottom of the screen.
-Try to beat your own high score!
+📁 Project Structure
 
-# Pause/Resume the Game:
-Press the "Escape" key to pause or resume the game.
-A pause menu will allow you to either continue or restart the game.
+duck-hunt-js/
+├── index.html
+├── style.css
+├── script.js
+├── sounds/
+│   ├── WelcomeSound.mp3
+│   ├── GameOver.mp3
+│   └── ShootSound.mp3
+├── images/
+│   ├── DuckTopRight.png
+│   ├── RedTopLeft.png
+│   └── CrossHair.png
+└── README.md
 
-# Good luck and have fun hunting ducks!
+🚀 Features
+- Smooth aim controls with both mouse and keyboard.
+
+- Animated ducks with randomized behavior.
+
+- Sound effects for shooting, game over, and welcome.
+
+- Pause and resume functionality.
+
+- Mobile/tab switching detection (auto-pause).
