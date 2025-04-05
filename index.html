@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Landing Page Section -->
+    <div class="landingpage">
+        <h1>Welcome to the Duck Hunt Game</h1>
+        <audio src="sounds/WelcomeSound.mp3" class="welcomeSound"></audio>
+        <!-- <div class="ClickToBegin">PLAY</div>    -->
+        <button id="howToPlayBtn">How to Play</button>
+        <button id="ClickToBegin">PLAY</button>
+    </div>
+
+    <!-- Game Instructions Modal -->
+    <div id="howToPlayModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>How to Play</h2>
+            <ul>
+                <li>- Move the aim using your mouse or arrow keys.</li>
+                <li>- Click or press the spacebar to shoot.</li>
+                <li>- Hit the moving targets to score points.</li>
+                <li>- Each target has different points, depending on its difficulty.</li>
+                <li>- Avoid getting hit by the projectiles coming from the top of the screen.</li>
+                <li>- You start with 3 lives; lose all lives or run out of time to end the game.</li>
+                <li>- Your high score will be saved, and you can try to beat it in the next round.</li>
+                <li>- Press 'Escape' to pause or resume the game.</li>
+            </ul>
+            <button id="closeModalBtn">Got it!</button>
+        </div>
+    </div>
+
+    <div class="aim">
+        <img src="images/CrossHair.png" draggable="false">
+    </div>  
+
+    <div class="target">
+        <img src="images/DuckTopRight.png" draggable="false">
+    </div>
+
+    <div class="projectile" style="display: none;"></div>
+
+    <div class="score"></div>
+    <div class="timer"></div>
+    <div class="lives"></div> 
+    <div class="highscore"></div>
+
+    <audio src="sounds/GameOver.mp3" class="gameoverSound"></audio>
+    <audio src="sounds/ShootSound.mp3" class="shootSound"></audio> <!-- Add this line -->
+
+    <div class="pauseMenu" style="display:none;"> <!-- Hide pause menu by default -->
+        <button class="continueBtn">Continue</button>
+        <button class="restartBtn">Restart</button>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>

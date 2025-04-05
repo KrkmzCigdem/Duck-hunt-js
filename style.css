@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: none;
+}
+
+body {
+  background-image: url("images/Play.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.aim {
+  position: fixed;
+  /* to have the cross hair at the center of screen */
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  /* x, y to have the center of the crosshair image on tip of pointer*/
+  transform: translate(-50%, -50%);
+  /* for positioned elements only + more z index => higher up in stack */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.target {
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  height: 110px;
+  width: 110px;
+  overflow: auto;
+  z-index: 0;
+  /* alter the width & height calc. of the box model */
+  /* the padding & border width is accounted for in total width & height */
+  box-sizing: border-box;
+}
+
+.score {
+  text-transform: uppercase;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  text-align: center;
+  margin: 16px 15px;
+  font-size: 18px;
+}
+
+.timer {
+  text-transform: uppercase;
+  position: fixed;
+  top: 5%;
+  right: 0%;
+  text-align: center;
+  margin: 16px 15px;
+  font-size: 1rem;
+}
+
+.lives {
+  text-transform: uppercase;
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  text-align: center;
+  margin: 16px 15px;
+  font-size: 1rem;
+}
+
+.pauseMenu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(39, 29, 149, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pauseMenu button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.highscore {
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 2%;
+  left: 35%;
+  right: 35%;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.landingpage {
+  position: fixed;
+  background-image: url("images/LandingPage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  cursor: default;
+}
+
+#ClickToBegin {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 150px; /* Set this based on your layout */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Press Start 2P", cursive;
+}
+
+#ClickToBegin:hover {
+  background-color: yellow;
+  color: black;
+}
+
+
+.projectile {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 40px;
+  background-color: red;
+  z-index: 1;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 20px;
+  color: black;
+}
+
+.modal li {
+  margin-top: 40px;
+  color: black;
+}
+
+.modal .close, #closeModalBtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal .close:hover, #closeModalBtn:hover {
+  background-color: darkred;
+}
+
+#howToPlayBtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;  /* Enable absolute positioning */
+  top: 100px;  /* Position the button 20px from the top */
+  left: 50%;  /* Move the button to the horizontal center */
+  transform: translateX(-50%);  /* Adjust by half its width to center it perfectly */
+  font-family: "Press Start 2P", cursive;
+  
+}
+
+#howToPlayBtn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+h1{
+ text-align: center;
+ margin-top: 20px;
+
+}
