@@ -22,7 +22,7 @@ To run locally:
    git clone https://github.com/KrkmzCigdem/Duck-hunt-js.git
 
 
-📁 Project Structure
+# Project Structure
 
 duck-hunt-js/
 ├── index.html
