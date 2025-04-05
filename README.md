@@ -22,21 +22,32 @@ To run locally:
    git clone https://github.com/KrkmzCigdem/Duck-hunt-js.git
 
 
-# Project Structure
+📁 Project Structure
 
-duck-hunt-js/
-├── index.html
-├── style.css
-├── script.js
-├── sounds/
-│   ├── WelcomeSound.mp3
-│   ├── GameOver.mp3
-│   └── ShootSound.mp3
-├── images/
+.
+├── README.md
+├── images
+│   ├── CrossHair.png
+│   ├── DedDuck.png
+│   ├── DuckLeft.png
+│   ├── DuckShot.png
 │   ├── DuckTopRight.png
+│   ├── GameOver.png
+│   ├── GameOver2.png
+│   ├── LandingPage.jpg
+│   ├── Play.png
+│   ├── RedLeft.png
+│   ├── RedRight.png
 │   ├── RedTopLeft.png
-│   └── CrossHair.png
-└── README.md
+│   ├── Welcome.png
+│   └── sprites.png
+├── index.html
+├── script.js
+├── sounds
+│   ├── GameOver.mp3
+│   ├── ShootSound.mp3
+│   └── WelcomeSound.mp3
+└── style.css
 
 🚀 Features
 - Smooth aim controls with both mouse and keyboard.
