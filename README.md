@@ -24,30 +24,8 @@ To run locally:
 
 📁 Project Structure
 
-.
-├── README.md
-├── images
-│   ├── CrossHair.png
-│   ├── DedDuck.png
-│   ├── DuckLeft.png
-│   ├── DuckShot.png
-│   ├── DuckTopRight.png
-│   ├── GameOver.png
-│   ├── GameOver2.png
-│   ├── LandingPage.jpg
-│   ├── Play.png
-│   ├── RedLeft.png
-│   ├── RedRight.png
-│   ├── RedTopLeft.png
-│   ├── Welcome.png
-│   └── sprites.png
-├── index.html
-├── script.js
-├── sounds
-│   ├── GameOver.mp3
-│   ├── ShootSound.mp3
-│   └── WelcomeSound.mp3
-└── style.css
+![Project Structure](/images/ProjectStructure.png)
+
 
 🚀 Features
 - Smooth aim controls with both mouse and keyboard.
